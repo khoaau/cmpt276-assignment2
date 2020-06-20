@@ -1,0 +1,44 @@
+.button {
+  font: bold 11px;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 10px 22px 10px 22px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+#userButton{
+  background-color: pink;
+  height: 100px;
+}
+
+table, tr, td, th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding-left: 10px;
+  height: 20px;
+  width: 400px;
+}
+
+input{
+  border-radius: 25px;
+  height: 50px;
+  width: 250px;
+  padding: 12px 20px;
+  margin: 4px 0;
+  border: black solid 1px;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 10px 22px 10px 22px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}

@@ -2,6 +2,8 @@
 <html>
 <head>
   <% include ../partials/header.ejs %>
+  app.use(express.static(__dirname + '/public'));
+  <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -11,13 +13,39 @@
 <div class="container">
 <h2>Database Results</h2>
 
-<ul>
-    <% results.forEach(function(r) { %>
-        <li><%= r.id %> - <%= r.name %></li>
+<div>
+  <table>
+    <tr>
+      <td> id</td>
+      <td> name</td>
+      <td> size</td>
+      <td> height</td>
+      <td> type</td>
+    </tr>
+    <% rows.forEach(function(r) { %>
+        <tr>
+          <td><%= r.id %></td> <td><%= r.name %></td> <td><%= r.size %></td> <td><%= r.height %></td>
+           <td> <%= r.type %> </td>
+        </tr>
     <% }); %>
-</ul>
-
+  </table>
 </div>
 
+
+<br>
+<br>
+<div>
+
+  <% rows.forEach(function(r) { %>
+    <button id="userButton" type="button" name="button" width:<%= r.size %>><%=r.name%></button>
+  <% }); %>
+</div>
+<br>
+<a href="mypage.html" class="button">Home Page</a>
+<a href="myform.html" class="button">Add User</a>
+<a href="deleteform.html" class="button">Delete User</a>
+<a href="update.html" class="button">Update User</a>
+
 </body>
+
 </html>
