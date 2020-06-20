@@ -30,7 +30,6 @@ var app = express();
   });
 
 
-
   app.post('/adduser', (req,res)=>{
     console.log("post request for /adduser");
     var uid = req.body.uid;
