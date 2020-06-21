@@ -2,8 +2,8 @@
 <html>
 <head>
   <% include ../partials/header.ejs %>
-  app.use(express.static(__dirname + '/public'));
-  <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+  //app.use(express.static(__dirname + '/public'));
+  <link href="/public/stylesheets/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -35,9 +35,8 @@
 <br>
 <br>
 <div>
-
   <% rows.forEach(function(r) { %>
-    <button id="userButton" type="button" name="button" width=<%=r.size%>><%=r.name%></button>
+    <button id="userButton" type="button" name="button" width:<%=r.size %>><%=r.name%></button>
   <% }); %>
 </div>
 <br>
